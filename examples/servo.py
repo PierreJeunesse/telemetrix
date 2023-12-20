@@ -28,7 +28,7 @@ Attach a pin to a servo and move it about.
 """
 
 # some globals
-SERVO_PIN = 5
+SERVO_PIN = 10
 
 # Create a Telemetrix instance.
 board = telemetrix.Telemetrix()
@@ -36,9 +36,9 @@ board.set_pin_mode_servo(SERVO_PIN, 100, 3000)
 time.sleep(.2)
 board.servo_write(SERVO_PIN, 90)
 time.sleep(1)
-board.servo_write(SERVO_PIN, 0)
+board.servo_write(SERVO_PIN, 1)
 time.sleep(1)
-board.servo_write(SERVO_PIN, 180)
+board.servo_write(SERVO_PIN, 179)
 time.sleep(1)
 board.servo_write(SERVO_PIN, 90)
 time.sleep(1)
