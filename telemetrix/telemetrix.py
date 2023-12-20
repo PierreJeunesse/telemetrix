@@ -2519,7 +2519,7 @@ class Telemetrix(threading.Thread):
 
     def _serial_receiver(self):
         """
-        Thread to continuously check for incoming data.
+        Thread to co (e.g., _i2c_read_report, _i2c_too_few, _i2c_too_mantinuously check for incoming data.
         When a byte comes in, place it onto the deque.
         """
         self.run_event.wait()
